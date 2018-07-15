@@ -7,5 +7,5 @@ As shown below, we firstly put the data file on the HDFS, such that the NameNode
 <img width="550" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Images/MapReduceHighLevelArchitecture.png"/>
 
 ## Pruning Step
-Applying MapReduce on the pruning step could significantly improve the performance of the PHC algorithm. In the example below, there are totally six vertices, each row in the edge list represents an edge, and each column contains two nodes. We put the edge list on the HDFS, such that Hadoop could split the file based on the block size and place them in different mappers.
+Applying MapReduce on the pruning step could significantly improve the performance of the PHC algorithm. In the example below, there are totally six vertices, each row in the edge list represents an edge, and each column contains two nodes. We put the edge list on the HDFS, such that Hadoop could split the file based on the block size and place them in different mappers.<br />
 <img width="800" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Images/PruningMapReduce.png"/>
