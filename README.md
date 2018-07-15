@@ -7,10 +7,10 @@ As shown below, we firstly put the data file on the HDFS, such that the NameNode
 <img width="550" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Images/MapReduceHighLevelArchitecture.png"/>
 
 ## Pruning Step
-Applying MapReduce on the pruning step could significantly improve the performance of the PHC algorithm. In the example below, there are totally six vertices, each row in the edge list represents an edge, and each column contains two nodes. We put the edge list on the HDFS, such that Hadoop could split the file based on the block size and place them in different mappers. In the example, we have four mappers and each contains four key-value pairs. To count the degree of each vertex in the Reducer, we use the node ID as the key, and value 1 for all vertices. After shuffling, the total degree can be calculated by adding up the values of each key in the Reducer. Lastly, the Reducer can filter out the nodes that do not have degrees 0, 1 and N' - 1.<br />
+Applying MapReduce on the pruning step could significantly improve the performance of the PHC algorithm. In the example below, there are totally six vertices, each row in the edge list represents an edge, and each column contains two nodes. We put the edge list on the HDFS, such that Hadoop could split the file based on the block size and place them in different Mappers. In the example, we have four Mappers and each Mapper contains four key-value pairs. To count the degree of each vertex in the Reducer, we use the node ID as the key, and value 1 for all vertices. After shuffling, the total degree can be calculated by adding up the values of each key in the Reducer. Lastly, the Reducer can filter out the nodes that do not have degrees 0, 1 and N' - 1.<br />
 <img width="800" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Images/PruningMapReduce.png"/>
 
 
 ## Intra-level Triangles
-<br />
-<img width="800" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Images/IntraLevelMapReduce.png"/>
+We can create a data structure to store nodes in each level and set the custom input split size to ensure that each Mapper can access a complete cluster at any one time. Because we could know the size of each cluster, we can set the inpt split size based on the cluster size. We can then apply the PHC algorithm to count the intra-level triangles of cluster in each Mapper and send the result to Reducer. Reducer can add up the number of triangles in each cluster and calculate the total number of intra-level triangles of all clusters.<br />
+<img width="900" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Images/IntraLevelMapReduce.png"/>
