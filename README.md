@@ -1,3 +1,3 @@
 # GraphChallenge - MapReduce
 
-![image](https://github.com/Graph-Challenge/MapReduce/blob/master/Images/MapReduceHighLevelArchitecture.png)
+<img width="450" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Images/MapReduceHighLevelArchitecture.png"/>
