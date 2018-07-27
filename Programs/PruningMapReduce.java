@@ -43,7 +43,7 @@ public class PruningMapReduce {
         degree += val.get();
       }
 	  
-      //self-define parameter, N, number of nodes
+      //self-defined parameter, N, number of nodes
       int N = 6;
 
       //Emit the nodes that do not have degrees 0, 1 and N - 1
