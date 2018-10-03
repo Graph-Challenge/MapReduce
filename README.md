@@ -5,7 +5,7 @@
 ## High-level Architecture of the MapReduce Implementation
 <p align="justify">As shown below, we first put the data file on the HDFS such that the NameNode can manage the file system namespace and determine the mapping blocks of DataNodes. Job Tracker can then monitor the the Task Trackers to perform MapReduce jobs.</p>
 <p align="center">
-  <img width="600" height="600" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/MapReduceHighLevelArchitecture.png"/>
+  <img width="650" height="600" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/MapReduceHighLevelArchitecture.png"/>
 </p>
 
 ## Pruning Step
