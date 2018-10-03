@@ -8,7 +8,7 @@
 
 ## Pruning Step
 <p align="justify">Applying MapReduce on the pruning step could significantly improve the performance of the PHC algorithm. In the example below, there are in total six vertices, each row in the edge list represents an edge, and each column contains two nodes. We put the edge list on the HDFS, such that Hadoop can split the file based on the block size and place them in different Mappers. In the example, we have four Mappers and each Mapper contains four key-value pairs. To count the degree of each vertex in the Reducer, we use the node ID as the key, and value 1 for all vertices. After shuffling, the total degree can be calculated by adding up the values of each key in the Reducer. Lastly, the Reducer can identify the nodes that do not have degrees 0, 1 and N' - 1.</p>
-<img width="800" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/PruningMapReduce.png"/>
+<img width="800" height="330" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/PruningMapReduce.png"/>
 
 
 ## Intra-level Triangles
@@ -17,4 +17,4 @@
 
 ## Inter-level Triangles
 <p align="justify">We can use the same data structure to store nodes at each level and set a larger custom input split size to ensure that each Mapper can access two levels at any time. Similar MapReduce operation can be performed to count the inter-level triangles.</p>
-<img width="900" height="350" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/InterLevelMapReduce.png"/>
+<img width="900" height="340" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/InterLevelMapReduce.png"/>
