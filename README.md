@@ -3,7 +3,7 @@
 <p align="justify">As network graphs become larger, the computational cost of using a single process to perform graph algorithms may be too high. For example, if there are more than 100,000,000 edges, it may take a long time to read in each edge and count the degree of each vertex for a program running on a single computer. We propose to apply MapReduce in three different steps in our PHC algorithm, <i>(1) pruning step</i>, <i>(2) counting of intra-level triangles</i>, and <i>(3) counting of inter-level triangles</i>, so that our PHC algorithm can enable parallel computation of graph algorithms.</p>
 
 ## High-level Architecture of the MapReduce Implementation
-<p align="justify">As shown below, we first put the data file on the HDFS such that the NameNode can manage the file system namespace and determine the mapping blocks of DataNodes. Job Tracker can then monitor the the Task Trackers to perform MapReduce jobs.</p>
+<p align="justify">As shown below, we first put the data file on the HDFS such that the Name Node can manage the file system namespace and determine the mapping blocks of Data Nodes. Job Tracker can then monitor the the Task Trackers to perform MapReduce jobs.</p>
 <p align="center">
   <img width="650" height="600" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/MapReduceHighLevelArchitecture.png"/>
 </p>
