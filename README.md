@@ -29,9 +29,9 @@
 ## Citing
 <p align="justify">Please cite our work if you have used our algorithm or codes. <br />Use the following BibTeX citation for the PHC algorithm and codes:</p>
 <p>@inproceedings{graphchallenge2018phc,<br>
-&nbsp;title={Parallel Counting of Triangles in Large Graphs: Pruning and Hierarchical Clustering Algorithms},<br>
-&nbsp;author={Chun-Yen Kuo and Ching Nam Hang and Pei Duo Yu and Chee Wei Tan},<br>
-&nbsp;booktitle={High Performance Extreme Computing Conference (HPEC)},<br>
-&nbsp;year={2018},<br>
-&nbsp;publisher={IEEE}
+&nbsp;&nbsp;&nbsp;&nbsp;title={Parallel Counting of Triangles in Large Graphs: Pruning and Hierarchical Clustering Algorithms},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author={Chun-Yen Kuo and Ching Nam Hang and Pei Duo Yu and Chee Wei Tan},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle={High Performance Extreme Computing Conference (HPEC)},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year={2018},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;publisher={IEEE}
 }</p>
