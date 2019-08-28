@@ -15,7 +15,7 @@
 </p>
 
 ## Intra-level Triangles
-<p align="justify">We can create a data structure to store nodes at each level and set the custom input split size to ensure that each Mapper can access a complete cluster at any one time. Since we know the size of each cluster, we can set the inpt split size based on the cluster size. We can then apply the PHC algorithm to count the intra-level triangles for each cluster in each Mapper and send the result to a Reducer. The Reducer can add up the number of triangles in each cluster and calculate the total number of intra-level triangles of all clusters.</p>
+<p align="justify">We can create a data structure to store nodes at each level and set the custom input split size to ensure that each Mapper can access a complete cluster at any one time. Since we know the size of each cluster, we can set the input split size based on the cluster size. We can then apply the PHC algorithm to count the intra-level triangles for each cluster in each Mapper and send the result to a Reducer. The Reducer can add up the number of triangles in each cluster and calculate the total number of intra-level triangles of all clusters.</p>
 <p align="center">
   <img width="900" height="330" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/IntraLevelMapReduce.png"/>
 </p>
