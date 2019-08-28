@@ -25,3 +25,13 @@
 <p align="center">
   <img width="900" height="340" src="https://github.com/Graph-Challenge/MapReduce/blob/master/Pictures/InterLevelMapReduce.png"/>
 </p>
+
+## Citing
+<p align="justify">Please cite our work if you have used our codes or algorithm. <br />Use the following BibTeX citation for the SNAP software library and tools:</p>
+<p>@inproceedings{graphchallenge2018phc,
+  title={Parallel Counting of Triangles in Large Graphs: Pruning and Hierarchical Clustering Algorithms},
+  author={Chun-Yen Kuo and Ching Nam Hang and Pei Duo Yu and Chee Wei Tan},
+  booktitle={High Performance Extreme Computing Conference (HPEC)},
+  year={2018},
+  publisher={IEEE}
+}</p>
