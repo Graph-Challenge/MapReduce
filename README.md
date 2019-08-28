@@ -27,11 +27,11 @@
 </p>
 
 ## Citing
-<p align="justify">Please cite our work if you have used our codes or algorithm. <br />Use the following BibTeX citation for the SNAP software library and tools:</p>
+<p align="justify">Please cite our work if you have used our algorithm or codes. <br />Use the following BibTeX citation for the PHC algorithm and codes:</p>
 <p>@inproceedings{graphchallenge2018phc,<br>
-  title={Parallel Counting of Triangles in Large Graphs: Pruning and Hierarchical Clustering Algorithms},<br>
-  author={Chun-Yen Kuo and Ching Nam Hang and Pei Duo Yu and Chee Wei Tan},<br>
-  booktitle={High Performance Extreme Computing Conference (HPEC)},<br>
-  year={2018},<br>
-  publisher={IEEE}
+&nbsp;title={Parallel Counting of Triangles in Large Graphs: Pruning and Hierarchical Clustering Algorithms},<br>
+&nbsp;author={Chun-Yen Kuo and Ching Nam Hang and Pei Duo Yu and Chee Wei Tan},<br>
+&nbsp;booktitle={High Performance Extreme Computing Conference (HPEC)},<br>
+&nbsp;year={2018},<br>
+&nbsp;publisher={IEEE}
 }</p>
