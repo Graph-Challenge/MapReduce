@@ -33,5 +33,5 @@
 &nbsp;&nbsp;&nbsp;&nbsp;author={Chun-Yen Kuo and Ching Nam Hang and Pei Duo Yu and Chee Wei Tan},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;booktitle={High Performance Extreme Computing Conference (HPEC)},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;year={2018},<br>
-&nbsp;&nbsp;&nbsp;&nbsp;publisher={IEEE}
+&nbsp;&nbsp;&nbsp;&nbsp;publisher={IEEE}<br>
 }</p>
