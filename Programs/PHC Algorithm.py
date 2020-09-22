@@ -58,7 +58,7 @@ def algorithm(G,D):
             for j in range(1,len(S[i])):
                 for upnodeID in S[i][j]:
                     U=[]
-                    D=[]
+                    M=[]
                     for t in range(G.GetNI(upnodeID).GetDeg()):
                         a=G.GetNI(upnodeID).GetNbrNId(t)
                         if j<len(S[i])-1:
@@ -66,14 +66,14 @@ def algorithm(G,D):
                                 U.append(a)
                         if j>1:        
                             if subgraphs[i][j-2].IsNode(a):
-                                D.append(a)
+                                M.append(a)
                     for s in range(len(U)):
                         for t in range(s+1,len(U)):
                             if subgraphs[i][j].IsEdge(U[s],U[t]):
                                 T=T+1
-                    for s in range(len(D)):
-                        for t in range(s+1,len(D)):
-                            if subgraphs[i][j-2].IsEdge(D[s],D[t]):
+                    for s in range(len(M)):
+                        for t in range(s+1,len(M)):
+                            if subgraphs[i][j-2].IsEdge(M[s],M[t]):
                                 T=T+1
         for i in range(len(S)):
             for j in range(len(S[i])-1):
